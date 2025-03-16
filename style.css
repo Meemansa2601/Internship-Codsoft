@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+
+header {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.hero {
+    background-color: #2d6a4f;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+
+.about {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+.services {
+    background-color: #e9ecef;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.service {
+    margin-bottom: 30px;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1.1rem;
+}
+
+
+.food-items {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.food-items h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.food-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.food-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.food-item h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.food-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.contact {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+
+footer {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .food-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .food-gallery {
+        grid-template-columns: 1fr;
+    }
+}
